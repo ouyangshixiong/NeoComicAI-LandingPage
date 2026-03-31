@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neocomic-AI · 把故事变成电影分镜与分镜视频 · Story to Storyboard to Video</title>
+<meta name="description" content="Neocomic-AI 是一套 AI 驱动的“故事到分镜到视频”创作工作台，从文本故事到结构化剧本、可编辑分镜、3×3 九宫格分镜图与分镜视频。Neocomic-AI is an AI-powered studio that turns stories into structured scripts, editable storyboards and shot-level videos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<div class="logo">Neocomic-AI</div>
+<nav class="nav">
+<a href="#features"><span class="lang-zh">核心能力</span><span class="lang-en">Features</span></a>
+<a href="#workflow"><span class="lang-zh">工作方式</span><span class="lang-en">How it works</span></a>
+<a href="#use-cases"><span class="lang-zh">使用场景</span><span class="lang-en">Use cases</span></a>
+<a href="#deployment"><span class="lang-zh">部署形态</span><span class="lang-en">Deployment</span></a>
+<a href="#automation"><span class="lang-zh">自动化与集成</span><span class="lang-en">Automation</span></a>
+<a href="#faq"><span class="lang-zh">常见问题</span><span class="lang-en">FAQ</span></a>
+</nav>
+<div class="header-cta">
+<div class="lang-switch">
+<button type="button" class="lang-btn active" data-lang="zh">中文</button>
+<button type="button" class="lang-btn" data-lang="en">EN</button>
+</div>
+<a href="#hero-cta" class="btn btn-outline"><span class="lang-zh">查看示例</span><span class="lang-en">View examples</span></a>
+<a href="mailto:13062981@qq.com" class="btn btn-primary"><span class="lang-zh">预售咨询</span><span class="lang-en">Pre-order inquiry</span></a>
+</div>
+</div>
+</header>
+<main>
+<section id="hero" class="hero">
+<div class="container hero-inner">
+<div class="hero-copy">
+<div class="eyebrow"><span class="lang-zh">AI 故事到分镜到视频创作工作台</span><span class="lang-en">AI story-to-storyboard-to-video studio</span></div>
+<h1><span class="lang-zh">把故事变成电影分镜与分镜视频</span><span class="lang-en">Turn stories into cinematic storyboards and shot videos</span></h1>
+<p class="hero-subtitle">
+<span class="lang-zh">Neocomic-AI 提供可视化工作流：剧情改写、剧本切分、角色一致的九宫格分镜图生成，以及单分镜视频生成与合并，让从灵感到成片更快、更可控，并支持在同一 IP 下管理系列作品。</span>
+<span class="lang-en">Neocomic-AI provides a visual workflow for script rewriting, beat-splitting, consistent 3×3 storyboard tiles, and single-shot video generation and merging, so you can go from idea to cut faster and with more control, while managing multi-work series under the same IP.</span>
+</p>
+<div class="hero-automation-strip">
+<img class="hero-automation-image" src="./github-images/NeoComicAI-OpenClaw.png" alt="Automation Agent with OpenClaw and Feishu chat controlling Neocomic workflows">
+</div>
+<div id="hero-cta" class="hero-actions">
+<a class="btn btn-primary" href="mailto:13062981@qq.com"><span class="lang-zh">预售 / 内测联系</span><span class="lang-en">Pre-order / early access</span></a>
+<a class="btn btn-secondary" href="#examples"><span class="lang-zh">查看示例作品</span><span class="lang-en">View sample projects</span></a>
+<a class="btn btn-ghost" href="#deployment"><span class="lang-zh">自托管部署指南</span><span class="lang-en">Self-hosting guide</span></a>
+</div>
+<ul class="hero-bullets">
+<li><span>结构化</span><span class="lang-zh"> 把文本故事转成可编辑的剧本与镜头组</span><span class="lang-en"> Turn raw stories into editable scripts and shot lists</span></li>
+<li><span>一致性</span><span class="lang-zh"> 角色库与参考图，让人物外观更统一</span><span class="lang-en"> Character library and references keep looks consistent</span></li>
+<li><span>可落地</span><span class="lang-zh"> 分镜图与视频片段可保存、管理与合并</span><span class="lang-en"> Storyboards and clips can be stored, managed and merged</span></li>
+</ul>
+</div>
+<div class="hero-panel">
+<div class="hero-tag"><span class="lang-zh">从故事到九宫格分镜</span><span class="lang-en">From story to 3×3 storyboard tiles</span></div>
+<div class="hero-panel-main">
+<div class="hero-panel-header">
+<div class="hero-panel-title"><span class="lang-zh">当前系列 · 职场见闻</span><span class="lang-en">Current series · Workplace Stories</span></div>
+<div class="hero-panel-status"><span class="lang-zh">工作流运行中</span><span class="lang-en">Workflow running</span></div>
+</div>
+<div class="hero-series-subtitle">
+<span class="lang-zh">作品：《职场见闻第一集》《职场见闻第二季》《职场见闻第三季》等系列项目在同一 IP 下统一管理。</span>
+<span class="lang-en">Works like “Workplace Stories Ep.1”, “Workplace Stories Season 2” and “Workplace Stories Season 3” are managed as a unified IP series.</span>
+</div>
+<div class="hero-steps">
+<div class="hero-step">
+<div class="hero-step-index">1</div>
+<div class="hero-step-body">
+<div class="hero-step-title"><span class="lang-zh">故事输入</span><span class="lang-en">Story input</span></div>
+<div class="hero-step-text"><span class="lang-zh">粘贴原始故事或创意大纲</span><span class="lang-en">Paste the original story or outline</span></div>
+</div>
+</div>
+<div class="hero-step">
+<div class="hero-step-index">2</div>
+<div class="hero-step-body">
+<div class="hero-step-title"><span class="lang-zh">剧情改写</span><span class="lang-en">Script rewrite</span></div>
+<div class="hero-step-text"><span class="lang-zh">生成结构化剧本并人工校对</span><span class="lang-en">Generate a structured script and refine it</span></div>
+</div>
+</div>
+<div class="hero-step">
+<div class="hero-step-index">3</div>
+<div class="hero-step-body">
+<div class="hero-step-title"><span class="lang-zh">智能分镜切分</span><span class="lang-en">Intelligent panelize</span></div>
+<div class="hero-step-text"><span class="lang-zh">自动拆分为可执行的分镜面板</span><span class="lang-en">Split into executable panels and shots</span></div>
+</div>
+</div>
+<div class="hero-step">
+<div class="hero-step-index">4</div>
+<div class="hero-step-body">
+<div class="hero-step-title"><span class="lang-zh">九宫格分镜图</span><span class="lang-en">3×3 storyboard tiles</span></div>
+<div class="hero-step-text"><span class="lang-zh">生成统一风格的 3×3 分镜图</span><span class="lang-en">Generate unified 3×3 storyboard images</span></div>
+</div>
+</div>
+<div class="hero-step">
+<div class="hero-step-index">5</div>
+<div class="hero-step-body">
+<div class="hero-step-title"><span class="lang-zh">分镜视频生成</span><span class="lang-en">Shot video generation</span></div>
+<div class="hero-step-text"><span class="lang-zh">按分片生成并合并视频片段</span><span class="lang-en">Create shot clips and merge them</span></div>
+</div>
+</div>
+</div>
+<div class="hero-metrics">
+<div class="metric">
+<div class="metric-label"><span class="lang-zh">单作品可视节点</span><span class="lang-en">Visual nodes per project</span></div>
+<div class="metric-value">30+</div>
+</div>
+<div class="metric">
+<div class="metric-label"><span class="lang-zh">角色设定资产</span><span class="lang-en">Character assets</span></div>
+<div class="metric-value"><span class="lang-zh">可复用</span><span class="lang-en">Reusable</span></div>
+</div>
+<div class="metric">
+<div class="metric-label"><span class="lang-zh">部署形态</span><span class="lang-en">Deployment options</span></div>
+<div class="metric-value">Web · Standalone · Desktop</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="examples" class="section section-alt">
+<div class="container">
+<div class="section-header">
+<h2><span class="lang-zh">从文本到分镜的可视化创作流水线</span><span class="lang-en">A visual pipeline from text to storyboard</span></h2>
+<p><span class="lang-zh">在同一个作品里，按阶段生成与管理故事、剧本、分镜、图像与视频。每个节点都能单独运行、查看输出、复制提示词或手动替换素材。</span><span class="lang-en">Within a single project, manage stories, scripts, panels, images and videos by stage. Each node can be run independently, inspected, reused or replaced manually.</span></p>
+</div>
+<div class="cards-grid cards-grid-3">
+<article class="card">
+<div class="card-media">
+<img src="./github-images/readme-1.png" alt="Neocomic-AI home and creation entry">
+</div>
+<h3><span class="lang-zh">作品主页与创作入口</span><span class="lang-en">Project home and creation entry</span></h3>
+<p><span class="lang-zh">从统一入口创建作品、查看推荐示例与最近项目，一眼查看当前创作进度。</span><span class="lang-en">Create new projects, browse featured examples and recent works from a single home, with progress visible at a glance.</span></p>
+</article>
+<article class="card">
+<div class="card-media">
+<img src="./github-images/readme-2.png" alt="Workflow graph and node status in Neocomic-AI">
+</div>
+<h3><span class="lang-zh">工作流图与节点回放</span><span class="lang-en">Workflow graph and node replay</span></h3>
+<p><span class="lang-zh">用节点图串联剧情改写、分镜切分、图像与视频生成，每个节点都可重复运行与回放。</span><span class="lang-en">Use a node graph to connect rewriting, panelize, image and video generation, with every node re-runnable and replayable.</span></p>
+</article>
+<article class="card">
+<div class="card-media">
+<img src="./github-images/readme-5.png" alt="3x3 storyboard tiles and character consistency">
+</div>
+<h3><span class="lang-zh">九宫格分镜与角色一致性</span><span class="lang-en">3×3 tiles and character consistency</span></h3>
+<p><span class="lang-zh">通过九宫格分镜图与角色库，让不同镜头中的人物造型、服装与场景更统一。</span><span class="lang-en">Combine 3×3 storyboard tiles with a character library so looks, outfits and scenes stay consistent across shots.</span></p>
+</article>
+</div>
+</div>
+</section>
+<section id="features" class="section">
+<div class="container">
+<div class="section-header">
+<h2><span class="lang-zh">核心能力</span><span class="lang-en">Core capabilities</span></h2>
+<p><span class="lang-zh">围绕“故事到分镜到视频”的完整链路设计，让创作者既能享受 AI 加速，又能保持专业级的可控性。</span><span class="lang-en">Designed around the full story-to-storyboard-to-video chain, giving you AI acceleration without losing professional control.</span></p>
+</div>
+<div class="cards-grid cards-grid-3">
+<article class="card feature-card">
+<h3><span class="lang-zh">可视化工作流编排</span><span class="lang-en">Visual workflow orchestration</span></h3>
+<p><span class="lang-zh">用节点图管理创作阶段：故事输入、改写、切分、角色库、分镜图、视频与合并。进度状态一目了然，适合协作与复盘。</span><span class="lang-en">Use a node graph to manage stages from story input, rewrite and panelize to character library, tiles, video and merge, with status always visible for collaboration and review.</span></p>
+</article>
+<article class="card feature-card">
+<h3><span class="lang-zh">剧情改写与结构化</span><span class="lang-en">Script rewrite and structuring</span></h3>
+<p><span class="lang-zh">调用 LLM 对原始文本润色与结构化，输出更适合视觉表达的剧本格式；结果可直接手动编辑，保留创作者控制权。</span><span class="lang-en">Call LLMs to polish and structure raw text into a script format tailored for visual storytelling while keeping everything editable by humans.</span></p>
+</article>
+<article class="card feature-card">
+<h3><span class="lang-zh">智能分镜切分</span><span class="lang-en">Intelligent panelize</span></h3>
+<p><span class="lang-zh">把剧本拆解为一组可执行的分镜，每个分镜包含场景描述与镜头信息，作为图像与视频生成的稳定输入。</span><span class="lang-en">Break scripts into executable panels, each with clear scene descriptions and camera information, as stable inputs for image and video generation.</span></p>
+</article>
+<article class="card feature-card">
+<h3><span class="lang-zh">角色库与参考图</span><span class="lang-en">Character library and references</span></h3>
+<p><span class="lang-zh">集中管理角色设定、标签与参考图。生成分镜时自动提供角色上下文，尽量保持人物造型、服装与气质一致。</span><span class="lang-en">Centralize character profiles, tags and reference images. Panels automatically receive character context to keep looks, outfits and vibe consistent.</span></p>
+</article>
+<article class="card feature-card">
+<h3><span class="lang-zh">风格库与运镜风格</span><span class="lang-en">Style presets and camera language</span></h3>
+<p><span class="lang-zh">沉淀可复用的画面风格与运镜风格，降低提示词成本，让不同项目更容易复用同一套审美与镜头语言。</span><span class="lang-en">Capture reusable visual styles and camera motions so teams can reuse the same aesthetic and shot language across projects with fewer prompts.</span></p>
+</article>
+<article class="card feature-card">
+<h3><span class="lang-zh">九宫格电影分镜图</span><span class="lang-en">3×3 cinematic storyboard tiles</span></h3>
+<p><span class="lang-zh">生成高分辨率分镜图，并支持九宫格布局，便于把镜头组拆成多个可控分片，为单分镜视频生成提供可靠首帧。</span><span class="lang-en">Generate high-resolution storyboard images in a 3×3 layout, splitting shot groups into controllable tiles and providing reliable first frames for video.</span></p>
+</article>
+<article class="card feature-card">
+<h3><span class="lang-zh">单分镜视频生成与合并</span><span class="lang-en">Per-shot video generation and merge</span></h3>
+<p><span class="lang-zh">针对九宫格的单个分片生成视频片段，并将多个片段合并为一个完整分镜视频，适合后续剪辑与串联成片。</span><span class="lang-en">Generate video clips for individual tiles and merge them into complete shot videos, ready for editing or sequencing.</span></p>
+</article>
+<article class="card feature-card">
+<h3><span class="lang-zh">服化道与场景参考</span><span class="lang-en">Art department references</span></h3>
+<p><span class="lang-zh">为分镜提供服化道与场景参考生成与管理能力，让世界设定更稳定，避免每次生成都重新定义视觉。</span><span class="lang-en">Provide generation and management of costume, props and set references so your world stays coherent instead of being reinvented each time.</span></p>
+</article>
+</div>
+</div>
+</section>
+<section id="workflow" class="section section-alt">
+<div class="container">
+<div class="section-header">
+<h2><span class="lang-zh">工作方式</span><span class="lang-en">How it works</span></h2>
+<p><span class="lang-zh">8 个步骤，把零散灵感变成可沟通、可制作的分镜与视频流水线。</span><span class="lang-en">Eight steps to turn loose ideas into a production-ready storyboard and video pipeline.</span></p>
+</div>
+<ol class="workflow-steps">
+<li>
+<h3><span class="lang-zh">1. 创建作品</span><span class="lang-en">1. Create a project</span></h3>
+<p><span class="lang-zh">输入标题与简介，建立项目空间，为后续剧本、分镜与素材提供统一归档。</span><span class="lang-en">Enter a title and summary to create a dedicated space for scripts, boards and assets.</span></p>
+</li>
+<li>
+<h3><span class="lang-zh">2. 故事输入</span><span class="lang-en">2. Input the story</span></h3>
+<p><span class="lang-zh">粘贴原始故事或创意大纲，也可以从已有文档中复制内容。</span><span class="lang-en">Paste the original story, outline or copy from existing documents.</span></p>
+</li>
+<li>
+<h3><span class="lang-zh">3. 剧情改写</span><span class="lang-en">3. Rewrite the script</span></h3>
+<p><span class="lang-zh">调用 LLM 生成结构化剧本，并由创作者人工校对、调整节奏与对白。</span><span class="lang-en">Use LLMs to generate a structured script, then refine pacing and dialogue by hand.</span></p>
+</li>
+<li>
+<h3><span class="lang-zh">4. 分镜切分</span><span class="lang-en">4. Panelize</span></h3>
+<p><span class="lang-zh">把剧本拆解为镜头组与分镜面板，为每一镜头补充景别、构图与动作信息。</span><span class="lang-en">Break the script into shot groups and panels, adding shot size, framing and action notes.</span></p>
+</li>
+<li>
+<h3><span class="lang-zh">5. 建立角色库</span><span class="lang-en">5. Build the character library</span></h3>
+<p><span class="lang-zh">为关键角色补充设定与参考图，让后续分镜图与视频生成的人物更稳定统一。</span><span class="lang-en">Enrich key characters with profiles and reference images so later boards and videos stay consistent.</span></p>
+</li>
+<li>
+<h3><span class="lang-zh">6. 生成九宫格分镜图</span><span class="lang-en">6. Generate 3×3 tiles</span></h3>
+<p><span class="lang-zh">生成统一风格的九宫格分镜图，用于对齐镜头设计并作为视频生成参考帧。</span><span class="lang-en">Generate unified 3×3 storyboard tiles to align shot design and serve as video reference frames.</span></p>
+</li>
+<li>
+<h3><span class="lang-zh">7. 生成分镜视频</span><span class="lang-en">7. Generate shot videos</span></h3>
+<p><span class="lang-zh">按镜头或分片生成视频片段，快速验证节奏与画面表达。</span><span class="lang-en">Generate clips per shot or tile to quickly validate rhythm and visual storytelling.</span></p>
+</li>
+<li>
+<h3><span class="lang-zh">8. 合并与导出</span><span class="lang-en">8. Merge and export</span></h3>
+<p><span class="lang-zh">将多个片段合并为完整分镜视频，导出用于剪辑、提案或团队沟通。</span><span class="lang-en">Merge clips into a complete animatic and export it for editing, pitching or team reviews.</span></p>
+</li>
+</ol>
+</div>
+</section>
+<section id="use-cases" class="section">
+<div class="container">
+<div class="section-header">
+<h2><span class="lang-zh">适用场景与行业</span><span class="lang-en">Use cases and industries</span></h2>
+<p><span class="lang-zh">覆盖内容创作、制作协同与技术集成等多种角色，让每个人都能插入到熟悉的一环。</span><span class="lang-en">Covers creators, production teams and technical integrators, so everyone can plug into the stage they know best.</span></p>
+</div>
+<div class="cards-grid cards-grid-3">
+<article class="card">
+<h3><span class="lang-zh">短剧与动画团队</span><span class="lang-en">Short-form and animation teams</span></h3>
+<p><span class="lang-zh">快速把灵感变成可拍、可画的分镜与镜头组，缩短从剧本到分镜的沟通与修改周期。</span><span class="lang-en">Quickly turn ideas into shootable and drawable shot lists, shrinking the gap from script to storyboard.</span></p>
+</article>
+<article class="card">
+<h3><span class="lang-zh">导演、编剧与分镜师</span><span class="lang-en">Directors, writers and board artists</span></h3>
+<p><span class="lang-zh">把剧本切分为镜头并生成可沟通的视觉稿，让导演意图更清晰地传达给摄影与美术。</span><span class="lang-en">Split the script into shots and generate visual boards so the director’s intent travels clearly to camera and art.</span></p>
+</article>
+<article class="card">
+<h3><span class="lang-zh">内容工作室与广告团队</span><span class="lang-en">Studios and creative agencies</span></h3>
+<p><span class="lang-zh">沉淀可复用的角色与视觉资产，形成可复制的创作流水线，支撑多项目并行。</span><span class="lang-en">Build reusable characters and visual assets, forming production pipelines that scale across multiple projects.</span></p>
+</article>
+<article class="card">
+<h3><span class="lang-zh">技术团队与内部工具</span><span class="lang-en">Engineering teams and internal tools</span></h3>
+<p><span class="lang-zh">通过自托管与自动化脚本，把故事生产能力接入现有系统与工作流管线，也便于与现有聊天机器人与 Agent 平台打通。</span><span class="lang-en">Use self-hosting and automation scripts to plug story production into existing systems and pipelines, and connect directly with existing chatbots and Agent platforms.</span></p>
+</article>
+</div>
+</div>
+</section>
+<section id="deployment" class="section section-alt">
+<div class="container">
+<div class="section-header">
+<h2><span class="lang-zh">部署形态</span><span class="lang-en">Deployment options</span></h2>
+<p><span class="lang-zh">从自托管 Web 到 Standalone，再到桌面应用，适配不同团队的交付与运维偏好。</span><span class="lang-en">From self-hosted web to standalone bundles and desktop apps, matching different delivery and ops preferences.</span></p>
+</div>
+<div class="deployment-grid">
+<article class="card">
+<h3><span class="lang-zh">自托管 Web</span><span class="lang-en">Self-hosted web</span></h3>
+<p><span class="lang-zh">基于 Next.js 应用与本地 SQLite 数据库，适合团队内部部署与二次开发，可在局域网或本机运行。</span><span class="lang-en">A Next.js app backed by local SQLite, ideal for in-house deployment and extensions on a LAN or single machine.</span></p>
+<p><span class="lang-zh">通过环境变量配置模型与存储，统一管理 Key 与资源路径。</span><span class="lang-en">Configure models and storage via environment variables to centralize key and resource management.</span></p>
+</article>
+<article class="card">
+<h3><span class="lang-zh">Standalone 本地运行目录</span><span class="lang-en">Standalone local bundle</span></h3>
+<p><span class="lang-zh">基于 Next.js standalone 输出，可打包为解压即用的本地服务目录。</span><span class="lang-en">Built from the Next.js standalone output, packaged as a “unzip-and-run” local service directory.</span></p>
+<p><span class="lang-zh">在一台机器上配置好环境变量与依赖后，使用者只需启动脚本并在浏览器中访问。</span><span class="lang-en">Once environment and dependencies are set up on one machine, users simply run the script and open a browser.</span></p>
+</article>
+<article class="card">
+<h3><span class="lang-zh">桌面 App（Electron）</span><span class="lang-en">Desktop app (Electron)</span></h3>
+<p><span class="lang-zh">为非技术用户提供开箱即用的桌面应用，通过独立授权服务进行 License 校验与访问控制。</span><span class="lang-en">Deliver an Electron desktop app for non-technical users, with a separate licensing service for access control.</span></p>
+<p><span class="lang-zh">适合以产品形态交付给创作团队或外部客户。</span><span class="lang-en">Ideal for shipping as a product to creative teams or external clients.</span></p>
+</article>
+</div>
+</div>
+</section>
+<section id="automation" class="section">
+<div class="container">
+<div class="section-header">
+<h2><span class="lang-zh">自动化与集成</span><span class="lang-en">Automation and integration</span></h2>
+<p><span class="lang-zh">为技术团队与 Agent 场景准备的统一接口层，将创作工作流纳入自动化管线，并原生支持通过 OpenClaw 对接飞书等聊天工具中的自动化 Agent。</span><span class="lang-en">A unified interface layer for engineering teams and Agents that brings the creative workflow into your automation pipelines, with native support for connecting automation agents in chat tools like Feishu via OpenClaw.</span></p>
+</div>
+<div class="cards-grid cards-grid-2">
+<article class="card">
+<h3><span class="lang-zh">Agent API 本地 Web 接口</span><span class="lang-en">Agent API local web endpoints</span></h3>
+<p><span class="lang-zh">提供统一前缀的 API，用于查询工作流状态、读取上下文、运行任意 stage 与操作。</span><span class="lang-en">Expose a unified API prefix for querying workflow state, reading context and running arbitrary stages or operations.</span></p>
+<p><span class="lang-zh">附带精简的 OpenAPI 描述，方便接入内部系统或构建自定义 Agent。</span><span class="lang-en">Ships with a minimal OpenAPI description to plug into internal systems or custom Agents.</span></p>
+</article>
+<article class="card">
+<h3><span class="lang-zh">自动化脚本与 CLI</span><span class="lang-en">Automation scripts and CLI</span></h3>
+<p><span class="lang-zh">提供一组 Node 脚本用于服务启动、账号创建与登录、作品创建、角色与风格管理、分镜与视频生成。</span><span class="lang-en">Offer a set of Node scripts for service health checks, user creation and login, project creation, character and style management, panel and video generation.</span></p>
+<p><span class="lang-zh">适合 CI、数据回填、批量生成素材或构建内部工具链。</span><span class="lang-en">Use them in CI, data backfill, batch asset creation or internal toolchains.</span></p>
+</article>
+<article class="card">
+<h3><span class="lang-zh">聊天 Agent 与 OpenClaw 集成</span><span class="lang-en">Chat agents with OpenClaw</span></h3>
+<p><span class="lang-zh">通过 OpenClaw 将 Neocomic 的 Automation API 暴露为可调用的动作，让飞书等聊天工具里的机器人直接创建作品、补齐缺失的 shots、重跑分镜与视频生成节点。</span><span class="lang-en">Use OpenClaw to expose Neocomic’s automation API as callable actions, so bots in tools like Feishu can create projects, fill missing shots and rerun panel and video-generation nodes directly from chat.</span></p>
+<p><span class="lang-zh">在对话里下达指令、查看进度汇报与错误日志，比手动打开控制台操作更自然、更高效。</span><span class="lang-en">Issue commands, review progress reports and inspect error logs inside conversations, making creation flows more natural and efficient than manual console operations.</span></p>
+</article>
+</div>
+</div>
+</section>
+<section id="security" class="section section-alt">
+<div class="container">
+<div class="section-header">
+<h2><span class="lang-zh">安全与隐私</span><span class="lang-en">Security and privacy</span></h2>
+<p><span class="lang-zh">从数据存储到 Key 管理，都以“可控、可迁移”为前提设计，适合严肃内容生产场景。</span><span class="lang-en">From storage to key management, everything is designed for control and portability in serious content-production environments.</span></p>
+</div>
+<div class="cards-grid cards-grid-3">
+<article class="card">
+<h3><span class="lang-zh">自托管与本地存储</span><span class="lang-en">Self-hosting and local storage</span></h3>
+<p><span class="lang-zh">数据默认存储在本地 SQLite 与本地文件目录，便于备份与迁移，也便于符合团队内部合规要求。</span><span class="lang-en">Data lives in a local SQLite database and file directories by default, making backups, migration and compliance easier.</span></p>
+</article>
+<article class="card">
+<h3><span class="lang-zh">Key 管理与多线路</span><span class="lang-en">Key management and multi-route providers</span></h3>
+<p><span class="lang-zh">外部模型的 API Key 通过用户配置保存，支持多条图像与视频线路配置与回退策略。</span><span class="lang-en">External model API keys are stored via user configuration, with multiple image and video routes and fallback strategies.</span></p>
+</article>
+<article class="card">
+<h3><span class="lang-zh">自动化鉴权</span><span class="lang-en">Authentication for automation</span></h3>
+<p><span class="lang-zh">通过短期 token 与 cookie 对本地 Agent 调用进行授权控制，让自动化脚本在安全边界内运行。</span><span class="lang-en">Short-lived tokens and cookies secure local Agent calls, keeping automation scripts inside a managed trust boundary.</span></p>
+</article>
+</div>
+</div>
+</section>
+<section id="faq" class="section">
+<div class="container">
+<div class="section-header">
+<h2><span class="lang-zh">常见问题</span><span class="lang-en">Frequently asked questions</span></h2>
+<p><span class="lang-zh">如果你正在评估是否将 Neocomic-AI 纳入团队工具链，这里是最常被问到的问题。</span><span class="lang-en">If you are evaluating Neocomic-AI for your team toolchain, these are the questions we hear most often.</span></p>
+</div>
+<div class="faq-list">
+<details open>
+<summary><span class="lang-zh">Q1：它能把什么输入变成什么输出？</span><span class="lang-en">Q1: What inputs and outputs does it support?</span></summary>
+<p><span class="lang-zh">输入是文本故事或创意大纲；输出是可编辑剧本、分镜面板（含场景描述）、九宫格分镜图，以及可合并的分镜视频片段。</span><span class="lang-en">Inputs are text stories or outlines; outputs include editable scripts, panel lists with scene descriptions, 3×3 storyboard tiles and mergeable shot video clips.</span></p>
+</details>
+<details>
+<summary><span class="lang-zh">Q2：如何保证角色一致性？</span><span class="lang-en">Q2: How do you keep characters consistent?</span></summary>
+<p><span class="lang-zh">通过角色库管理角色设定与参考图，在分镜与视频生成时作为上下文条件输入，尽量减少人物造型与气质的漂移。</span><span class="lang-en">A character library stores profiles and reference images, which are injected as context into panel and video generation to reduce drift in appearance and tone.</span></p>
+</details>
+<details>
+<summary><span class="lang-zh">Q3：可以不用视频功能只做漫画分镜吗？</span><span class="lang-en">Q3: Can I only use it for comic-style storyboards without video?</span></summary>
+<p><span class="lang-zh">可以。分镜图生成、角色库与工作流管理本身就是独立价值，视频相关节点可以按需启用或跳过。</span><span class="lang-en">Yes. Storyboard generation, the character library and workflow management stand on their own; video nodes are optional.</span></p>
+</details>
+<details>
+<summary><span class="lang-zh">Q4：支持哪些图像与视频线路？</span><span class="lang-en">Q4: Which image and video providers are supported?</span></summary>
+<p><span class="lang-zh">系统提供可扩展的 Provider 结构，并已接入多种图像与视频生成线路，支持按项目或用户配置切换与回退。</span><span class="lang-en">The system uses an extensible provider structure and already integrates multiple image and video routes, with per-project or per-user configuration and fallbacks.</span></p>
+</details>
+<details>
+<summary><span class="lang-zh">Q5：数据与素材存在哪里？</span><span class="lang-en">Q5: Where are data and assets stored?</span></summary>
+<p><span class="lang-zh">默认存储在本地数据目录，包括 SQLite 数据库与图片、视频文件，也可以对接首尾帧云服务同步参考帧到公网可访问的静态文件服务。</span><span class="lang-en">By default, everything is stored locally in a SQLite database and media directories. You can also hook into a keyframe cloud service to sync reference frames to public static hosting.</span></p>
+</details>
+<details>
+<summary><span class="lang-zh">Q6：适合团队协作吗？</span><span class="lang-en">Q6: Is it suitable for team collaboration?</span></summary>
+<p><span class="lang-zh">适合。作品、角色、风格、分镜与素材都按结构化对象管理，便于复用与规范化流程，也提供 Agent API 便于接入内部系统。</span><span class="lang-en">Yes. Projects, characters, styles, panels and media are all managed as structured objects for reuse and standardization, and the Agent API makes it easy to integrate into internal systems.</span></p>
+</details>
+</div>
+</div>
+</section>
+<section id="cta" class="section section-cta">
+<div class="container cta-inner">
+<div>
+<h2><span class="lang-zh">把你的故事，变成可沟通、可制作、可交付的分镜与视频</span><span class="lang-en">Turn your stories into communicable, producible, deliverable storyboards and videos</span></h2>
+<p><span class="lang-zh">从灵感到分镜，从分镜到视频片段，所有环节都在同一个工作台里可视化管理与复用。当前 Neocomic-AI 处于内测与预售阶段，如需试用或购买，请邮件联系：13062981@qq.com。</span><span class="lang-en">From ideas to boards and from boards to shot clips, every step is managed and reusable in one visual workspace. Neocomic-AI is currently in private preview and pre-sale; for trials or purchase, please contact us at 13062981@qq.com.</span></p>
+</div>
+<div class="cta-actions">
+<a class="btn btn-primary btn-lg" href="mailto:13062981@qq.com"><span class="lang-zh">预售联系我：13062981@qq.com</span><span class="lang-en">Pre-order & contact: 13062981@qq.com</span></a>
+<a class="btn btn-secondary btn-lg" href="#automation"><span class="lang-zh">查看部署与自动化能力</span><span class="lang-en">Explore deployment and automation</span></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<div class="footer-brand">Neocomic-AI</div>
+<div class="footer-links">
+<a href="#security"><span class="lang-zh">安全与隐私</span><span class="lang-en">Security</span></a>
+<a href="#deployment"><span class="lang-zh">部署形态</span><span class="lang-en">Deployment</span></a>
+<a href="#faq">FAQ</a>
+</div>
+<div class="footer-meta">© <span id="year"></span> Neocomic-AI. All rights reserved.</div>
+</div>
+</footer>
+<script>
+var body = document.body;
+var htmlEl = document.documentElement;
+var yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+var langButtons = document.querySelectorAll(".lang-btn");
+var savedLang = window.localStorage ? localStorage.getItem("neocomic_lang") : null;
+function applyLang(lang) {
+  var isEn = lang === "en";
+  htmlEl.setAttribute("lang", isEn ? "en" : "zh-CN");
+  var zhNodes = document.querySelectorAll(".lang-zh");
+  var enNodes = document.querySelectorAll(".lang-en");
+  zhNodes.forEach(function(node) {
+    node.style.display = isEn ? "none" : "";
+  });
+  enNodes.forEach(function(node) {
+    node.style.display = isEn ? "" : "none";
+  });
+  langButtons.forEach(function(btn) {
+    var isActive = btn.getAttribute("data-lang") === lang;
+    btn.classList.toggle("active", isActive);
+  });
+}
+if (savedLang !== "zh" && savedLang !== "en") {
+  savedLang = "zh";
+}
+applyLang(savedLang || "zh");
+langButtons.forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    var lang = btn.getAttribute("data-lang") || "zh";
+    if (window.localStorage) {
+      localStorage.setItem("neocomic_lang", lang);
+    }
+    applyLang(lang);
+  });
+});
+</script>
+</body>
+</html>
